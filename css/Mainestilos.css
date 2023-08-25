@@ -10,7 +10,7 @@
 }
 
 .caja {
-    width: 1350px;
+    width: 100%;
     height: 150px;
     background-image: url("../img/hand-hold-soccer-ball-805422.webp");
     display: flex;
@@ -297,6 +297,67 @@ main {
     padding: 10px;
     
 }
+
+.container {
+        margin-top: 20px;
+    }
+
+@media screen and (max-width: 480px) {
+    .caja {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 150px;
+        justify-content: left;
+        align-items: start;
+
+    }
+    .caja-encabezado {
+        font-size: 20px;
+        margin-left: 10px;
+    
+    }
+    .caja-img {
+        width: 100px;
+        height: 100px;
+        margin-top: 10px;
+    }
+    
+    .grid {
+        display: flex;
+        flex-direction: column;
+    } 
+    .nosotros {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    } 
+    .row {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    } 
+    .fondo-columnas {
+        width: 70%;
+    } 
+    .col-md-4 {
+        width: 70%;
+    }
+    .container {
+        margin-top: 20px;
+    }
+    .motivando {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }  
+    
+}
+    
+
     
 
 
