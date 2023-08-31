@@ -1,0 +1,278 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "NotoSans-Black";
+  src: url("../fonts/NotoSans-Black.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.caja {
+  width: 100%;
+  height: 150px;
+  background-image: url("../img/hand-hold-soccer-ball-805422.webp");
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.caja .caja-img {
+  border-radius: 10px;
+  margin-left: 10px;
+}
+.caja .caja-encabezado {
+  font-family: "NotoSans-Black";
+  font-size: 40px;
+  color: red;
+  display: inline;
+  margin-right: 150px;
+}
+
+body {
+  background-color: aliceblue;
+  background-size: cover;
+}
+
+.bienvenidos {
+  color: blue;
+  font-family: "NotoSans-Black";
+  text-align: center;
+}
+
+.grid {
+  font-family: "NotoSans-Black";
+  color: red;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "Mejor-salud    habilidades" "fomento    profesional";
+  gap: 1rem;
+  margin: 20px 20px 20px 20px;
+}
+.grid .mejor-salud {
+  background-color: aqua;
+  grid-area: Mejor-salud;
+  background-image: url("../img/saludmental.jpg");
+  background-size: cover;
+  background-position: center center;
+  border-radius: 80px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+  gap: 2rem;
+  text-align: center;
+}
+.grid .deshab {
+  background-color: brown;
+  grid-area: habilidades;
+  background-image: url("../img/habilidad.webp");
+  background-size: cover;
+  background-position: center center;
+  border-radius: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+  gap: 2rem;
+  text-align: center;
+}
+.grid .fomento {
+  background-color: blue;
+  grid-area: fomento;
+  background-image: url("../img/competencia.jpg");
+  background-size: cover;
+  background-position: center center;
+  border-radius: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+  gap: 2rem;
+  text-align: center;
+}
+.grid .desprof {
+  background-color: azure;
+  grid-area: profesional;
+  background-image: url("../img/profesional.jpg");
+  background-size: cover;
+  background-position: center center;
+  border-radius: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+  gap: 2rem;
+  text-align: center;
+}
+
+.container {
+  margin-top: 20px;
+}
+.container .titulo-ofrecemos {
+  font-family: "NotoSans-Black";
+  font-size: 40px;
+  margin-top: 40px;
+  margin-left: 20px;
+  color: black;
+}
+.container .texto-ofrecemos {
+  font-family: Verdana;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+  text-align: justify;
+  margin-right: 20px;
+  color: black;
+}
+.container .contenedor {
+  margin: 1rem;
+  display: flex;
+  gap: 2rem;
+  margin-top: 50px;
+}
+.container .beneficios {
+  text-align: justify;
+}
+.container .titulos-beneficios {
+  font-family: "NotoSans-Black";
+  font-size: 20px;
+}
+.container .parrafo {
+  margin-top: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+}
+
+.nosotros {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.nosotros .imgnos {
+  border-radius: 75px;
+}
+
+.container {
+  margin-top: 20px;
+}
+.container .titulo-container {
+  color: blue;
+}
+.container .parrafo-container {
+  color: blue;
+  font-size: 20px;
+  text-align: justify;
+}
+
+.fondo-columnas {
+  background-color: aliceblue;
+  border-radius: 30px;
+  margin: 40px 40px 40px 40px;
+  border-color: blue;
+  border-style: double;
+  padding: 10px;
+}
+
+.motivate {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.motivate .imgmotivate {
+  border-radius: 70px;
+}
+
+.texto-sueños {
+  font-family: Verdana;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+  text-align: center;
+  margin-right: 20px;
+  color: black;
+}
+
+.formulario {
+  gap: 10px;
+  margin-left: 20px;
+}
+
+.seguinos {
+  text-align: center;
+  padding: 1rem;
+}
+
+.linkear {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.pie {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+@media screen and (max-width: 480px) {
+  .caja {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 150px;
+    justify-content: left;
+    align-items: start;
+  }
+  .caja-encabezado {
+    font-size: 20px;
+    margin-left: 10px;
+  }
+  .caja-img {
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+  }
+  .grid {
+    display: flex;
+    flex-direction: column;
+  }
+  .nosotros {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+  .row {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+  .fondo-columnas {
+    width: 70%;
+  }
+  .col-md-4 {
+    width: 70%;
+  }
+  .container {
+    margin-top: 20px;
+  }
+  .motivate {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+}/*# sourceMappingURL=estilo.css.map */

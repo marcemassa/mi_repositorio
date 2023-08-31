@@ -1,0 +1,22 @@
+.caja {
+    width: 100%;
+    height: 150px;
+    background-image: url("../img/hand-hold-soccer-ball-805422.webp");
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+
+    .caja-img {
+        border-radius: 10px;
+        margin-left: 10px;
+    }
+
+    .caja-encabezado {
+        font-family: "NotoSans-Black";
+        font-size: 40px;
+        color: red;
+        display: inline;
+        margin-right: 150px;
+    }   
+}

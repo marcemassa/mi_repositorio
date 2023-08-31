@@ -1,0 +1,55 @@
+.container {
+    margin-top: 20px;
+
+    .titulo-ofrecemos {
+        font-family: "NotoSans-Black";
+        font-size: 40px;
+        margin-top: 40px;
+        margin-left: 20px;
+        color: black;
+        
+    }
+    .texto-ofrecemos {
+        font-family: Verdana;
+        font-size: 20px;
+        margin-top: 20px;
+        margin-left: 20px;
+        text-align: justify;
+        margin-right: 20px;
+        color: black;
+    }
+
+    .contenedor {
+        margin: 1rem;
+        display: flex;
+        gap: 2rem;
+        margin-top: 50px;
+        
+        
+    }
+
+        .beneficios {
+         text-align: justify;    
+    }
+
+            .titulos-beneficios {
+            font-family: "NotoSans-Black";
+            font-size: 20px;
+    }
+            .parrafo {
+            margin-top: 20px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 16px;
+    }
+} 
+.nosotros {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+    .imgnos {
+        border-radius: 75px;
+    }
+}  

@@ -55,7 +55,7 @@
 .menu-item a:hover {
     text-decoration: underline double;
 }
-.blue {
+.bienvenidos {
     color: blue;
     font-family: "NotoSans-Black";
     text-align: center;
@@ -85,6 +85,7 @@ background-size:cover;
 main {
     padding: 40px;
 }
+/*
 .caja-padre {
     height: 1250px;
 }
@@ -170,6 +171,7 @@ main {
     padding-top: 20px;
     
 }
+*/
 .nosotros {
     display: flex;
     flex-direction: row;

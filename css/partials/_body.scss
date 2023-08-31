@@ -1,0 +1,91 @@
+body {
+    background-color: aliceblue;
+    background-size:cover;
+    }
+
+    .bienvenidos {
+        color: blue;
+        font-family: "NotoSans-Black";
+        text-align: center;
+    }
+
+    .grid {
+        font-family: "NotoSans-Black";
+        color: red;
+        min-height: 100vh;
+        
+        display: grid;
+        
+    
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    
+        grid-template-areas: 
+            "Mejor-salud    habilidades"
+            "fomento    profesional";
+        gap: 1rem; 
+        margin: 20px 20px 20px 20px; 
+        
+        .mejor-salud {
+            background-color: aqua;
+            grid-area: Mejor-salud;
+            background-image: url("../img/saludmental.jpg");
+            background-size: cover;
+            background-position: center center;
+            border-radius: 80px;
+            height: 500px;
+        
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 2rem;
+            gap: 2rem;
+            text-align: center;
+        }
+        .deshab {
+            background-color: brown;
+            grid-area: habilidades;
+            background-image: url("../img/habilidad.webp");
+            background-size: cover;
+            background-position: center center;
+            border-radius: 80px;
+        
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 2rem;
+            gap: 2rem;
+            text-align: center;
+        }
+        .fomento {
+            background-color: blue;
+            grid-area: fomento;
+            background-image: url("../img/competencia.jpg");
+            background-size: cover;
+            background-position: center center;
+            border-radius: 80px;
+        
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 2rem;
+            gap: 2rem;
+            text-align: center;
+        }
+        .desprof {
+            background-color: azure;
+            grid-area: profesional;
+            background-image: url("../img/profesional.jpg");
+            background-size: cover;
+            background-position: center center;
+            border-radius: 80px;
+        
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 2rem;
+            gap: 2rem;
+            text-align: center;
+        }
+
+    }
