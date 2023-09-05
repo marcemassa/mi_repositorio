@@ -33,6 +33,9 @@
 body {
   background-color: aliceblue;
   background-size: cover;
+  background-image: linear-gradient(45deg, white, rgb(106, 106, 175), rgb(175, 56, 56));
+  background: rgb(9,9,121);
+  background: linear-gradient(90deg, rgba(9,9,121,0.01724439775910369) 12%, rgba(7,71,162,1) 100%);
 }
 
 .bienvenidos {
@@ -42,6 +45,7 @@ body {
 }
 
 .grid {
+  
   font-family: "NotoSans-Black";
   color: red;
   min-height: 100vh;
@@ -53,6 +57,7 @@ body {
   margin: 20px 20px 20px 20px;
 }
 .grid .mejor-salud {
+  
   background-color: aqua;
   grid-area: Mejor-salud;
   background-image: url("../img/saludmental.jpg");
@@ -149,14 +154,39 @@ body {
 }
 
 .nosotros {
+  transition: 3s;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   margin-top: 50px;
   margin-bottom: 50px;
 }
-.nosotros .imgnos {
+.nosotros .imgnos1 {
   border-radius: 75px;
+}
+.nosotros .imgnos1:hover {
+  transform: translate(30px, 30px);
+}
+
+.nosotros .imgnos2 {
+  border-radius: 75px;
+}
+.nosotros .imgnos2:hover {
+  transform: translate(30px, 30px);
+}
+
+.nosotros .imgnos3 {
+  border-radius: 75px;
+}
+.nosotros .imgnos3:hover {
+  transform: translate(30px, 30px);
+}
+
+.nosotros .imgnos4 {
+  border-radius: 75px;
+}
+.nosotros .imgnos4:hover {
+  transform: translate(30px, 30px);
 }
 
 .container {
