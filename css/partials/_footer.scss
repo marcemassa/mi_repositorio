@@ -1,18 +1,23 @@
-.seguinos {
-    
-    text-align: center;
-    padding: 1rem
-}   
-.linkear {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+.footer {
+    background-color: rgb(219, 7, 7);
+
+
+    .seguinos {
+        
+        text-align: center;
+        padding: 1rem
+    }   
+    .linkear {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .pie {
+        display: flex;
+        flex-direction: row;
+        align-items: center;  
+        justify-content: center;
+        gap: 5px;  
+    }   
 }
-.pie {
-    display: flex;
-    flex-direction: row;
-    align-items: center;  
-    justify-content: center;
-    gap: 5px;  
-}   

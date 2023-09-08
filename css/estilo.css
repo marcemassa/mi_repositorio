@@ -34,8 +34,8 @@ body {
   background-color: aliceblue;
   background-size: cover;
   background-image: linear-gradient(45deg, white, rgb(106, 106, 175), rgb(175, 56, 56));
-  background: rgb(9,9,121);
-  background: linear-gradient(90deg, rgba(9,9,121,0.01724439775910369) 12%, rgba(7,71,162,1) 100%);
+  background: rgb(9, 9, 121);
+  background: linear-gradient(90deg, rgba(9, 9, 121, 0.0172443978) 12%, rgb(7, 71, 162) 100%);
 }
 
 .bienvenidos {
@@ -45,32 +45,47 @@ body {
 }
 
 .grid {
-  
   font-family: "NotoSans-Black";
-  color: red;
+  color: blue;
   min-height: 100vh;
+  align-items: center;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: "Mejor-salud    habilidades" "fomento    profesional";
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "Mejor-salud     textomejor-salud" "texto-deshab    habilidades" "fomento         texto-fomento" "texto-desprof   desprof";
   gap: 1rem;
-  margin: 20px 20px 20px 20px;
+  margin: 20px 20px 50px 100px;
 }
 .grid .mejor-salud {
-  
   background-color: aqua;
   grid-area: Mejor-salud;
   background-image: url("../img/saludmental.jpg");
   background-size: cover;
   background-position: center center;
   border-radius: 80px;
-  height: 500px;
+  height: 450px;
+  width: 450px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 2rem;
-  gap: 2rem;
+  gap: 1rem;
   text-align: center;
+}
+.grid .textomejor-salud {
+  font-size: 15px;
+  background-color: rgb(193, 193, 248);
+  color: black;
+  border-radius: 80px;
+  grid-area: textomejor-salud;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+  gap: 1rem;
+  text-align: center;
+  height: 450px;
+  width: 450px;
 }
 .grid .deshab {
   background-color: brown;
@@ -79,12 +94,29 @@ body {
   background-size: cover;
   background-position: center center;
   border-radius: 80px;
+  height: 450px;
+  width: 450px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 2rem;
   gap: 2rem;
   text-align: center;
+}
+.grid .texto-deshab {
+  font-size: 15px;
+  background-color: rgb(193, 193, 248);
+  color: black;
+  border-radius: 80px;
+  grid-area: texto-deshab;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+  gap: 2rem;
+  text-align: center;
+  height: 450px;
+  width: 450px;
 }
 .grid .fomento {
   background-color: blue;
@@ -93,6 +125,8 @@ body {
   background-size: cover;
   background-position: center center;
   border-radius: 80px;
+  height: 450px;
+  width: 450px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -100,19 +134,51 @@ body {
   gap: 2rem;
   text-align: center;
 }
-.grid .desprof {
-  background-color: azure;
-  grid-area: profesional;
-  background-image: url("../img/profesional.jpg");
-  background-size: cover;
-  background-position: center center;
+.grid .texto-fomento {
+  font-size: 15px;
+  background-color: rgb(193, 193, 248);
+  color: black;
   border-radius: 80px;
+  grid-area: texto-fomento;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 2rem;
   gap: 2rem;
   text-align: center;
+  height: 450px;
+  width: 450px;
+}
+.grid .desprof {
+  background-color: azure;
+  grid-area: desprof;
+  background-image: url("../img/profesional.jpg");
+  background-size: cover;
+  background-position: center center;
+  border-radius: 80px;
+  height: 450px;
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+  gap: 2rem;
+  text-align: center;
+}
+.grid .texto-desprof {
+  font-size: 14px;
+  background-color: rgb(193, 193, 248);
+  color: black;
+  border-radius: 80px;
+  grid-area: texto-desprof;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+  gap: 2rem;
+  text-align: center;
+  height: 450px;
+  width: 450px;
 }
 
 .container {
@@ -154,7 +220,7 @@ body {
 }
 
 .nosotros {
-  transition: 3s;
+  transition: 2s;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -167,21 +233,18 @@ body {
 .nosotros .imgnos1:hover {
   transform: translate(30px, 30px);
 }
-
 .nosotros .imgnos2 {
   border-radius: 75px;
 }
 .nosotros .imgnos2:hover {
   transform: translate(30px, 30px);
 }
-
 .nosotros .imgnos3 {
   border-radius: 75px;
 }
 .nosotros .imgnos3:hover {
   transform: translate(30px, 30px);
 }
-
 .nosotros .imgnos4 {
   border-radius: 75px;
 }
@@ -193,11 +256,14 @@ body {
   margin-top: 20px;
 }
 .container .titulo-container {
-  color: blue;
+  font-family: "NotoSans-Black";
+  color: black;
+  font-size: 40px;
 }
 .container .parrafo-container {
-  color: blue;
-  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: black;
+  font-size: 20x;
   text-align: justify;
 }
 
@@ -231,24 +297,35 @@ body {
   color: black;
 }
 
-.formulario {
-  gap: 10px;
-  margin-left: 20px;
+.contacto {
+  margin-left: 70px;
+  margin-top: 40px;
 }
 
-.seguinos {
+.formulario {
+  gap: 280px;
+  margin-left: 70px;
+  margin-bottom: 40px;
+  display: flex;
+}
+.formulario .estamos {
+  justify-items: right;
+}
+
+.footer {
+  background-color: rgb(219, 7, 7);
+}
+.footer .seguinos {
   text-align: center;
   padding: 1rem;
 }
-
-.linkear {
+.footer .linkear {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 }
-
-.pie {
+.footer .pie {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -266,7 +343,8 @@ body {
     align-items: start;
   }
   .caja-encabezado {
-    font-size: 20px;
+    font-family: "NotoSans-Black";
+    font-size: 10px;
     margin-left: 10px;
   }
   .caja-img {
@@ -304,5 +382,9 @@ body {
     flex-direction: column;
     gap: 10px;
     align-items: center;
+  }
+  .formulario {
+    display: flex;
+    flex-direction: column;
   }
 }/*# sourceMappingURL=estilo.css.map */

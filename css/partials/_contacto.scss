@@ -1,4 +1,15 @@
+.contacto {
+    margin-left: 70px;
+    margin-top: 40px;
+}
 .formulario {
-    gap: 10px;
-    margin-left: 20px;
+    gap: 280px;
+    margin-left: 70px;
+    margin-bottom: 40px;
+
+    display: flex;
+    
+    .estamos{
+     justify-items: right;
+    }
 }

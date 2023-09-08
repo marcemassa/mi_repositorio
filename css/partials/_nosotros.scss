@@ -43,13 +43,35 @@
     }
 } 
 .nosotros {
+    transition: 2s;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     margin-top: 50px;
     margin-bottom: 50px;
     
-    .imgnos {
+    .imgnos1 {
         border-radius: 75px;
+    }
+    .imgnos1:hover {
+        transform: translate(30px, 30px);
+    }
+    .imgnos2 {
+        border-radius: 75px;
+    }
+    .imgnos2:hover {
+        transform: translate(30px, 30px);
+    }
+    .imgnos3 {
+        border-radius: 75px;
+    }
+    .imgnos3:hover {
+        transform: translate(30px, 30px);
+    }
+    .imgnos4 {
+        border-radius: 75px;
+    }
+    .imgnos4:hover {
+        transform: translate(30px, 30px);
     }
 }  
