@@ -10,6 +10,21 @@
 .caja .caja-img {
   border-radius: 10px;
   margin-left: 10px;
+  animation-name: girar;
+  animation-duration: 5s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes girar {
+  0% {
+    transform: rotateY(90deg);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
 }
 .caja .caja-encabezado {
   font-family: "NotoSans-Black";
@@ -17,4 +32,16 @@
   color: red;
   display: inline;
   margin-right: 150px;
+  animation: focus-in-contract 0.7s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+@keyframes focus-in-contract {
+  0% {
+    letter-spacing: 1em;
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
 }/*# sourceMappingURL=header.css.map */

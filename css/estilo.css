@@ -21,6 +21,21 @@
 .caja .caja-img {
   border-radius: 10px;
   margin-left: 10px;
+  animation-name: girar;
+  animation-duration: 5s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes girar {
+  0% {
+    transform: rotateY(90deg);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
 }
 .caja .caja-encabezado {
   font-family: "NotoSans-Black";
@@ -28,6 +43,18 @@
   color: red;
   display: inline;
   margin-right: 150px;
+  animation: focus-in-contract 0.7s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+@keyframes focus-in-contract {
+  0% {
+    letter-spacing: 1em;
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
 }
 
 body {
@@ -42,8 +69,21 @@ body {
   color: blue;
   font-family: "NotoSans-Black";
   text-align: center;
+  animation: focus-in-expand-fwd 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s both;
 }
-
+@keyframes focus-in-expand-fwd {
+  0% {
+    letter-spacing: -0.5em;
+    transform: translateZ(-800px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateZ(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
 .grid {
   font-family: "NotoSans-Black";
   color: blue;
@@ -71,6 +111,21 @@ body {
   padding: 2rem;
   gap: 1rem;
   text-align: center;
+  animation-name: rotar;
+  animation-duration: 5s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+}
+@keyframes rotar {
+  0% {
+    transform: rotateY(30deg);
+  }
+  50% {
+    transform: rotateY(-30deg);
+  }
+  100% {
+    transform: rotateY(0deg);
+  }
 }
 .grid .textomejor-salud {
   font-size: 15px;
@@ -87,6 +142,11 @@ body {
   height: 450px;
   width: 450px;
 }
+.grid .textomejor-salud:hover {
+  transition: 1s;
+  transform: scale(1.2);
+  color: red;
+}
 .grid .deshab {
   background-color: brown;
   grid-area: habilidades;
@@ -102,6 +162,10 @@ body {
   padding: 2rem;
   gap: 2rem;
   text-align: center;
+  animation-name: rotar;
+  animation-duration: 5s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
 }
 .grid .texto-deshab {
   font-size: 15px;
@@ -118,6 +182,11 @@ body {
   height: 450px;
   width: 450px;
 }
+.grid .texto-deshab:hover {
+  transition: 1s;
+  transform: scale(1.2);
+  color: red;
+}
 .grid .fomento {
   background-color: blue;
   grid-area: fomento;
@@ -133,6 +202,10 @@ body {
   padding: 2rem;
   gap: 2rem;
   text-align: center;
+  animation-name: rotar;
+  animation-duration: 5s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
 }
 .grid .texto-fomento {
   font-size: 15px;
@@ -149,6 +222,11 @@ body {
   height: 450px;
   width: 450px;
 }
+.grid .texto-fomento:hover {
+  transition: 1s;
+  transform: scale(1.2);
+  color: red;
+}
 .grid .desprof {
   background-color: azure;
   grid-area: desprof;
@@ -164,6 +242,10 @@ body {
   padding: 2rem;
   gap: 2rem;
   text-align: center;
+  animation-name: rotar;
+  animation-duration: 5s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
 }
 .grid .texto-desprof {
   font-size: 14px;
@@ -180,6 +262,11 @@ body {
   height: 450px;
   width: 450px;
 }
+.grid .texto-desprof:hover {
+  transition: 1s;
+  transform: scale(1.2);
+  color: red;
+}
 
 .container {
   margin-top: 20px;
@@ -190,6 +277,7 @@ body {
   margin-top: 40px;
   margin-left: 20px;
   color: black;
+  animation: focus-in-expand-fwd 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s both;
 }
 .container .texto-ofrecemos {
   font-family: Verdana;
@@ -199,6 +287,20 @@ body {
   text-align: justify;
   margin-right: 20px;
   color: black;
+  animation: focus-in-expand-fwd 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s both;
+}
+@keyframes focus-in-expand-fwd {
+  0% {
+    letter-spacing: -0.5em;
+    transform: translateZ(-800px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateZ(0);
+    filter: blur(0);
+    opacity: 1;
+  }
 }
 .container .contenedor {
   margin: 1rem;
@@ -213,14 +315,21 @@ body {
   font-family: "NotoSans-Black";
   font-size: 20px;
 }
+.container .titulos-beneficios:hover {
+  transition: 1s;
+  transform: scale(1.2);
+}
 .container .parrafo {
   margin-top: 20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 16px;
 }
+.container .parrafo:hover {
+  transition: 1s;
+  transform: scale(1.2);
+}
 
 .nosotros {
-  transition: 2s;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -231,27 +340,44 @@ body {
   border-radius: 75px;
 }
 .nosotros .imgnos1:hover {
-  transform: translate(30px, 30px);
+  transition: 1s;
+  transform: rotate(10deg);
 }
 .nosotros .imgnos2 {
   border-radius: 75px;
 }
 .nosotros .imgnos2:hover {
-  transform: translate(30px, 30px);
+  transition: 1s;
+  transform: rotate(10deg);
 }
 .nosotros .imgnos3 {
   border-radius: 75px;
 }
 .nosotros .imgnos3:hover {
-  transform: translate(30px, 30px);
+  transition: 1s;
+  transform: rotate(10deg);
 }
 .nosotros .imgnos4 {
   border-radius: 75px;
 }
 .nosotros .imgnos4:hover {
-  transform: translate(30px, 30px);
+  transition: 1s;
+  transform: rotate(10deg);
 }
-
+.nosotros .entrenando {
+  border-radius: 75px;
+  animation: rotate-in-2-fwd-cw 5s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite both;
+}
+@keyframes rotate-in-2-fwd-cw {
+  0% {
+    transform: translateZ(-200px) rotate(-45deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateZ(0) rotate(0);
+    opacity: 1;
+  }
+}
 .container {
   margin-top: 20px;
 }
@@ -285,6 +411,19 @@ body {
 }
 .motivate .imgmotivate {
   border-radius: 70px;
+  animation: slide-in-elliptic-top-fwd 2s steps(2, start) infinite alternate forwards;
+}
+@keyframes slide-in-elliptic-top-fwd {
+  0% {
+    transform: translateY(-600px) rotateX(-30deg) scale(0);
+    transform-origin: 50% 100%;
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) rotateX(0) scale(1);
+    transform-origin: 50% 1400px;
+    opacity: 1;
+  }
 }
 
 .texto-sueños {

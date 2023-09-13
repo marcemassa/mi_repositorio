@@ -7,7 +7,8 @@
         margin-top: 40px;
         margin-left: 20px;
         color: black;
-        
+        -webkit-animation: focus-in-expand-fwd 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+                animation: focus-in-expand-fwd 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
     }
     .texto-ofrecemos {
         font-family: Verdana;
@@ -17,8 +18,43 @@
         text-align: justify;
         margin-right: 20px;
         color: black;
+        -webkit-animation: focus-in-expand-fwd 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+                animation: focus-in-expand-fwd 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
     }
-
+    @-webkit-keyframes focus-in-expand-fwd {
+        0% {
+          letter-spacing: -0.5em;
+          -webkit-transform: translateZ(-800px);
+                  transform: translateZ(-800px);
+          -webkit-filter: blur(12px);
+                  filter: blur(12px);
+          opacity: 0;
+        }
+        100% {
+          -webkit-transform: translateZ(0);
+                  transform: translateZ(0);
+          -webkit-filter: blur(0);
+                  filter: blur(0);
+          opacity: 1;
+        }
+      }
+      @keyframes focus-in-expand-fwd {
+        0% {
+          letter-spacing: -0.5em;
+          -webkit-transform: translateZ(-800px);
+                  transform: translateZ(-800px);
+          -webkit-filter: blur(12px);
+                  filter: blur(12px);
+          opacity: 0;
+        }
+        100% {
+          -webkit-transform: translateZ(0);
+                  transform: translateZ(0);
+          -webkit-filter: blur(0);
+                  filter: blur(0);
+          opacity: 1;
+        }
+    }
     .contenedor {
         margin: 1rem;
         display: flex;
@@ -36,14 +72,22 @@
             font-family: "NotoSans-Black";
             font-size: 20px;
     }
+            .titulos-beneficios:hover {
+            transition: 1s;
+            transform: scale(1.2);
+    }        
             .parrafo {
             margin-top: 20px;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             font-size: 16px;
     }
-} 
+            .parrafo:hover {
+            transition: 1s;
+            transform: scale(1.2);
+            
+    } 
+}   
 .nosotros {
-    transition: 2s;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -54,24 +98,67 @@
         border-radius: 75px;
     }
     .imgnos1:hover {
-        transform: translate(30px, 30px);
+        transition: 1s;
+        transform: rotate(10deg);
     }
     .imgnos2 {
         border-radius: 75px;
     }
     .imgnos2:hover {
-        transform: translate(30px, 30px);
+        transition: 1s;
+        transform: rotate(10deg);
     }
     .imgnos3 {
         border-radius: 75px;
     }
     .imgnos3:hover {
-        transform: translate(30px, 30px);
+        transition: 1s;
+        transform: rotate(10deg);
     }
     .imgnos4 {
         border-radius: 75px;
     }
     .imgnos4:hover {
-        transform: translate(30px, 30px);
+        transition: 1s;
+        transform: rotate(10deg);
     }
-}  
+    .entrenando {
+        border-radius: 75px;
+
+          -webkit-animation: rotate-in-2-fwd-cw 5s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
+                  animation: rotate-in-2-fwd-cw 5s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
+        
+        
+    }
+  }
+
+ @-webkit-keyframes rotate-in-2-fwd-cw {
+  0% {
+    -webkit-transform: translateZ(-200px) rotate(-45deg);
+            transform: translateZ(-200px) rotate(-45deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0) rotate(0);
+            transform: translateZ(0) rotate(0);
+    opacity: 1;
+  }
+}
+@keyframes rotate-in-2-fwd-cw {
+  0% {
+    -webkit-transform: translateZ(-200px) rotate(-45deg);
+            transform: translateZ(-200px) rotate(-45deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0) rotate(0);
+            transform: translateZ(0) rotate(0);
+    opacity: 1;
+  }
+}
+
+
+
+
+ 
+  
