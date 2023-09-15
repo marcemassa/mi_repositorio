@@ -37,7 +37,7 @@ header {
   font-size: 40px;
   color: red;
   display: inline;
-  margin-right: 150px;
+  margin-right: 155px;
   animation: focus-in-contract 0.7s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 @keyframes focus-in-contract {
